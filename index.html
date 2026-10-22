@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>File Compressor Support</title>
+<meta name="description" content="Help and support for File Compressor, the iPhone app that shrinks videos to a target size and turns them into GIFs.">
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --muted:#6e6e73; --bg:#fff; --card:#f5f5f7; --accent:#0071e3; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --muted:#a1a1a6; --bg:#000; --card:#1c1c1e; --accent:#2997ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Helvetica,Arial,sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  h1 { font-size: 2.2rem; line-height:1.15; margin: 0 0 8px; letter-spacing:-0.02em; }
+  h2 { font-size: 1.3rem; margin: 40px 0 12px; letter-spacing:-0.01em; }
+  p, li { color: var(--fg); }
+  .lead { color: var(--muted); font-size: 1.15rem; margin: 0 0 8px; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+  details { background: var(--card); border-radius: 14px; padding: 14px 18px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 10px 0 2px; color: var(--muted); }
+  .cta { display:inline-block; background:var(--accent); color:#fff; padding:12px 22px; border-radius:12px; font-weight:600; margin-top:8px; }
+  .cta:hover { text-decoration:none; opacity:.9; }
+  footer { margin-top: 56px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>File Compressor Support</h1>
+  <p class="lead">Shrink videos to the size you need, or turn them into GIFs. Everything happens on your iPhone.</p>
+
+  <h2>Need help?</h2>
+  <p>The fastest way to reach me is to open an issue. Tell me what you were trying to do, what happened, and (if you can) your iPhone model and iOS version.</p>
+  <a class="cta" href="https://github.com/goddamnimit/file-compressor-support/issues/new">Get support on GitHub</a>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>How do I get a video under a size limit?</summary>
+    <p>Tap <b>Choose Videos</b> and pick your video. Stay on <b>Compress</b>, drag the slider (or tap a preset such as 10, 20 or 25&nbsp;MB), then tap <b>Compress</b>. When it finishes you can share the result or save it to your camera roll.</p>
+  </details>
+
+  <details>
+    <summary>It says "Too long for this target". What can I do?</summary>
+    <p>A very long clip can't fit into a very small file at an acceptable quality. Raise the target size, or trim the clip in the Photos app first and try again.</p>
+  </details>
+
+  <details>
+    <summary>How do I make a GIF?</summary>
+    <p>Pick a video, switch to <b>GIF</b>, choose a size (240 to 640&nbsp;px on the longest side), a speed, and optionally a frame rate and whether it loops, then tap <b>Convert to GIF</b>. GIFs have no sound.</p>
+  </details>
+
+  <details>
+    <summary>My GIF is too big. How do I make it smaller?</summary>
+    <p>Choose a smaller <b>Size</b> or a lower <b>Frame rate</b> under <b>More options</b>. GIFs are much less efficient than video, so a short, small GIF will always be smaller. Dropping Size by one step typically makes the file roughly 40% smaller.</p>
+  </details>
+
+  <details>
+    <summary>What does "Crop black bars" do?</summary>
+    <p>If your video has black bars on the sides or top and bottom (for example a screen recording of a 4:3 show), the app finds the real picture and crops the GIF to it, so the picture gets all of the pixels. The option only turns on when bars are found.</p>
+  </details>
+
+  <details>
+    <summary>Can I convert several videos at once?</summary>
+    <p>Yes. Choose up to 20 videos and the app processes them as a batch, then lets you share or save them all together.</p>
+  </details>
+
+  <details>
+    <summary>Does the app change or delete my original videos?</summary>
+    <p>No. Your originals are never modified. The optional <b>Delete Original</b> button is the only thing that touches them: it asks for confirmation, then shows the standard iOS delete prompt. Deleted videos go to Recently Deleted for 30 days.</p>
+  </details>
+
+  <details>
+    <summary>The conversion stopped or my file disappeared.</summary>
+    <p>Keep the app open while it works, because iOS pauses apps in the background. Converted files are kept in temporary storage until you share or save them, so share or save the result before leaving the app.</p>
+  </details>
+
+  <h2>Privacy</h2>
+  <p>File Compressor doesn't collect any data. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>File Compressor &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="https://github.com/goddamnimit/file-compressor-support/issues">Support</a></footer>
+</main>
+</body>
+</html>
